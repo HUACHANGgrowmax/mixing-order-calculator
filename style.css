@@ -49,21 +49,21 @@ input[type="text"] {
 }
 
 input[type="range"] {
-  width: 100%; /* Full width for better scaling */
-  height: 1rem; /* Larger track for touch devices */
+  width: 100%;
+  height: 1rem;
   -webkit-appearance: none;
   appearance: none;
   background: #ddd;
   border-radius: 6px;
   outline: none;
   margin: 0.5rem 0;
-  touch-action: pan-x; /* Smooth touch scrolling */
+  touch-action: pan-x;
 }
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 1.5rem; /* Larger thumb for touch */
+  width: 1.5rem;
   height: 1.5rem;
   background: #39bc4b;
   border-radius: 50%;
@@ -128,7 +128,6 @@ button:hover {
   background-color: #e60000;
 }
 
-/* Mobile view (≤780px) */
 @media (max-width: 780px) {
   table {
     display: block;
@@ -161,7 +160,6 @@ button:hover {
     white-space: nowrap;
   }
 
-  /* Nutrient Table */
   #nutrientTable {
     overflow-x: hidden;
     margin: 0 auto;
@@ -202,7 +200,6 @@ button:hover {
     color: black;
   }
 
-  /* Color Legend */
   #nutrientTable::after {
     content: "Legend: N (lightblue), P₂O₅ (orange), K₂O (teal), MgO (green), TOTAL (yellow)";
     display: block;
@@ -212,40 +209,37 @@ button:hover {
     text-align: center;
   }
 
-  /* Materials Table */
   #materialTable {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin: 0 auto;
     width: 90%;
     min-width: 280px;
-    max-width: calc(100vw - 6vw); /* Fit within viewport */
+    max-width: calc(100vw - 6vw);
     box-sizing: border-box;
     display: block;
   }
   #materialTable table {
-    width: 100%; /* Scale to container */
-    min-width: 500px; /* Ensure scrolling for all columns */
+    width: 100%;
+    min-width: 500px;
   }
   #materialTable th, #materialTable td {
     padding: 1vw 1.5vw;
-    min-width: 90px; /* Slightly smaller for mobile */
+    min-width: 90px;
     font-size: 0.75rem;
   }
   #materialTable input[type="range"] {
     width: 100%;
-    height: 1.2rem; /* Larger track for mobile */
+    height: 1.2rem;
   }
   #materialTable input[type="range"]::-webkit-slider-thumb,
   #materialTable input[type="range"]::-moz-range-thumb {
-    width: 1.8rem; /* Larger thumb for touch */
+    width: 1.8rem;
     height: 1.8rem;
   }
 }
 
-/* Tablet view (768px–1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* Nutrient Table */
   #nutrientTable {
     overflow-x: hidden;
     margin: 0 auto;
@@ -286,7 +280,6 @@ button:hover {
     color: black;
   }
 
-  /* Color Legend */
   #nutrientTable::after {
     content: "Legend: N (lightblue), P₂O₅ (orange), K₂O (teal), MgO (green), TOTAL (yellow)";
     display: block;
@@ -309,7 +302,7 @@ button:hover {
   }
   #materialTable table {
     width: 100%;
-    min-width: 600px; /* Ensure all columns are visible with scroll */
+    min-width: 600px;
   }
   #materialTable th, #materialTable td {
     padding: 1vw 1.5vw;
@@ -318,16 +311,15 @@ button:hover {
   }
   #materialTable input[type="range"] {
     width: 100%;
-    height: 1.4rem; /* Larger for tablet touch */
+    height: 1.4rem;
   }
   #materialTable input[type="range"]::-webkit-slider-thumb,
   #materialTable input[type="range"]::-moz-range-thumb {
-    width: 2rem; /* Larger thumb for iPad */
+    width: 2rem;
     height: 2rem;
   }
 }
 
-/* Desktop view (≥1024px) */
 @media (min-width: 1024px) {
   .form-row {
     flex-direction: row;
@@ -359,7 +351,6 @@ button:hover {
     content: none;
   }
 
-  /* Nutrient Table */
   #nutrientTable {
     overflow-x: hidden;
     margin: 0 auto;
@@ -400,7 +391,6 @@ button:hover {
     color: black;
   }
 
-  /* Color Legend */
   #nutrientTable::after {
     content: "Legend: N (lightblue), P₂O₅ (orange), K₂O (teal), MgO (green), TOTAL (yellow)";
     display: block;
@@ -410,13 +400,12 @@ button:hover {
     text-align: center;
   }
 
-  /* Materials Table */
   #materialTable {
     overflow-x: hidden;
     margin: 0 auto;
     width: 90%;
     min-width: 400px;
-    max-width: 800px; /* Scale for larger screens */
+    max-width: 800px;
   }
   #materialTable table {
     width: 100%;
@@ -437,7 +426,6 @@ button:hover {
   }
 }
 
-/* Select2 adjustments */
 .select2-container {
   width: 80% !important;
   max-width: 100%;
@@ -495,4 +483,5 @@ button:hover {
 .fixed-value {
   font-style: italic;
   color: red;
+
 }
